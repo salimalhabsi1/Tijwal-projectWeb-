@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to Tourism Website</title>
+    <link rel="stylesheet" href="Tijwal Styling Sheet.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+
+        .content {
+            background: #fff;
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+      
+        footer a:hover{color: #2691d9; text-decoration: underline;}
+footer li {font-size: 13px; margin-top: 5px; color: #808080;}
+footer ol{font-size: 13px; margin-top: 5px; color: gray;}
+nav lu li {
+            background-color: black;
+        }
+        body nav {
+          
+          height: 70px;
+         width: 100%;
+          font-family:cursive;
+              
+          }
+          body nav ul{
+             
+              background-color: rgb(231, 231, 196); 
+  }
+  body nav ul li{
+      display: inline-block;
+      line-height: 80px;
+      
+  }
+  body nav ul li a{
+      color: black;
+      font-size: 15px;
+      padding: 6px 11px;
+      text-transform: uppercase;
+      border-radius: 5px;
+      
+    
+  }
+  a:hover{
+    color: rgb(0, 0, 0);
+  }
+  a{
+    color:  rgb(153, 153, 134);
+  }
+    </style>
+</head>
+<body>
+    <div class="container-fluid" style="background-color: beige;">
+        <header>
+            <div class="profile-container">
+                <div class="profile-image">
+                    <a href="LoginSignup.html"><img src="account image.png" class="image-thumbnail" alt="User Profile"></a>
+                </div>
+                <!-- Optionally, you can add the user's name or other information below the profile image -->
+                <p id="userName">User Name</p><!--This name will change to the user name later on-->
+    
+            </div>
+            
+            <div id="logo">
+                <a href="index.html"> <img src="logo without BG.png" class="image-thumbnail" alt="Tourism Logo" width="80"></a>
+            </div>
+          
+            <h1 style="background-color: rgba(0, 0, 0, 0.479);">Welcome to Tijwal site</h1>
+        <div class="navbar navbar-light  beige">
+    
+            <nav class="navbar navbar-light beige ">
+            <ul >
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="AboutUs.html">About Us</a></li>
+                <li class="nav-item"><a href="ContactUs.html">Contact Us</a></li>
+                <li class="nav-item"><a href="Booking.html">Booking</a></li>
+                <li class="nav-item" ><a href="AddActivity.html">Add Your Activity</a></li>
+            </ul>
+          </div>  
+        </nav>
+        
+    
+        </header>
+
+
+   
+    <form action="submit_service.php" method="post"><br/>
+        <label for="title">Title of the Activity:</label>
+        <input type="text" id="title" name="title" required>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="4" required></textarea>
+
+        <label for="price">Price in OMR / persone:</label>
+        <input type="text" id="price" name="price"  required>
+
+        <label for="contactNumber">Contact Number:</label>
+        <input type="tel" id="contactNumber" name="contactNumber" required>
+
+        <label for="location">Location or Address:</label>
+        <input type="text" id="location" name="location">
+
+        <label for="duration">Duration of the Activity:</label>
+        <input type="text" id="duration" name="duration">
+
+        <label for="availability">Available Dates and Times:</label>
+        <textarea id="availability" name="availability" rows="4"></textarea>
+
+        <label for="photos">Upload Photos:</label>
+        <input type="file" id="photos" name="photos[]" accept="image/*" multiple>
+
+        <label for="bookingInfo">Booking or Reservation Information:</label>
+        <textarea id="bookingInfo" name="bookingInfo" rows="4"></textarea>
+
+        <label for="additionalContact">Additional Contact Information:</label>
+        <input type="text" id="additionalContact" name="additionalContact">
+
+        <label for="requirements">Special Requirements / Terms and condition:</label>
+        <textarea id="requirements" name="requirements" rows="4"></textarea>
+
+        <label for="ageRequirements">Age or Skill Level Requirements:</label>
+        <input type="text" id="ageRequirements" name="ageRequirements">
+
+        <label for="termsAgreement">
+            <input type="checkbox" id="termsAgreement" name="termsAgreement" required>
+            I agree to the terms and conditions
+        </label>
+
+        <label for="socialMedia">Social Media Links:</label>
+        <input type="text" id="socialMedia" name="socialMedia">
+
+        <input type="submit" class="btn btn-primary" value="Submit">
+    </form>
+
+
+
+    <footer style="display:flex; margin-top: 0.5%;">
+        <div style="margin-left: 5%;   ">
+            <h5 style="margin-left: 20%;  margin-top: 30px; ">Contact Us</h5>
+            <ol >
+                <p><img src="tele-icon.png"  class="image-thumbnail" height="20px" width="20px"/><br/>+968 9999999</p>
+    
+              <img src="loca-icon.png"  class="image-thumbnail" height="20px" width="20px"/><br/><a href="#squgooglemap">SQU - COLLEGE OF SCIENCE</a>
+    
+                <p><img src="Email-icon.png"  class="image-thumbnail" height="20px" width="21px"/><br/><a 
+                    href="mailto: zsalooms101@gmail.com">SQU@gmail.com</a></p></li>
+            </ol>
+        </div>
+    
+        <div style="margin-left: 24%; margin-top: 20px; ">
+            <ul>
+               
+                    <img src="logo without BG.png"  class="image-thumbnail" alt="Tijwal logo"
+                    height="80cm" width="80cm"  />
+                
+                <li style="margin-top: 10px; margin-bottom:5px; text-justify: auto;">
+                    <a href="index.html">Home</a>|<a href="AboutUs.html">AboutUs</a>|<a href="Booking.html">Booking</a>
+                </li>
+                <li style="font-size: 10px;margin-top: 5px; margin-right: 10%;">TijwalOman 2023</li>
+            </ul>
+        </div>
+       
+        <div style="margin-left: 30%;margin-top: 30px;">
+            <h3 >About Tijwal</h3>
+            <p style="font-size: 13px; margin-right: 27px; margin-top: 16px; margin-left: 30px; ">
+                <a href="AboutUs.html" style=" margin-bottom: 25px;">
+                  Tijwal is your gateway to unforgettable experiences and adventures in the heart of Oman. We are passionate about connecting adventure seekers with unique and exciting activities provided by local service providers.</a></p>
+        
+        </div> 
+    </div> 
+    
+    </footer>
+    </div>
+</body>
+</html>
