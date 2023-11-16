@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tourism Website</title>
+    <link rel="stylesheet" href="Tijwal Styling Sheet.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        /* Add CSS styling here */
+
+     /*
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #0f587c;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0f587c;
+            color: #fff;
+        }
+
+        .destinations {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .destination {
+            margin: 30px;
+            padding: 10px;
+            background-color: #0f587c;
+            border-radius: 5px;
+            width: 30%;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .destination-content {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .destination img {
+            max-width: 100%;
+            height: auto;
+        }*/
+        
+        th{
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7); /* White with 0.7 transparency */
+
+        }
+        nav lu li {
+            background-color: black;
+        }
+                  body nav ul{
+             
+             background-color: beige; 
+ }
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        body nav {
+          
+          height: 70px;
+         width: 100%;
+          font-family:cursive;
+              
+          }
+          body nav ul{
+             
+              background-color: rgb(231, 231, 196); 
+  }
+  body nav ul li{
+      display: inline-block;
+      line-height: 80px;
+      
+  }
+  body nav ul li a{
+      color: black;
+      font-size: 15px;
+      padding: 6px 11px;
+      text-transform: uppercase;
+      border-radius: 5px;
+      
+    
+  }
+  a:hover{
+    color: rgb(0, 0, 0);
+  }
+  a{
+    color:  rgb(153, 153, 134);
+  }
+
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid" style="background-color: beige;">
+        
+  
+    <header>
+        <div class="profile-container">
+            <div class="profile-image">
+                <a href="LoginSignup.html"><img src="account image.png" class="image-thumbnail" alt="User Profile"></a>
+            </div>
+            <!-- Optionally, you can add the user's name or other information below the profile image -->
+            <p id="userName">User Name</p><!--This name will change to the user name later on-->
+
+        </div>
+        
+        <div id="logo">
+            <a href="index.html"> <img src="logo without BG.png" class="image-thumbnail" alt="Tourism Logo" width="80"></a>
+        </div>
+      
+        <h1 style="background-color: rgba(0, 0, 0, 0.479);">Welcome to Tijwal site</h1>
+    <div class="navbar navbar-light  beige">
+
+        <nav class="navbar navbar-light beige ">
+        <ul >
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a href="AboutUs.html">About Us</a></li>
+            <li class="nav-item"><a href="ContactUs.html">Contact Us</a></li>
+            <li class="nav-item"><a href="Booking.html">Booking</a></li>
+            <li class="nav-item" ><a href="AddActivity.html">Add Your Activity</a></li>
+        </ul>
+      </div>  
+    </nav>
+    
+
+    </header>
+
+    
+
+    <table class="table table-hover " style="width:100%; ;">
+        <tr style="margin-right: px;">
+            <th style="background-image: url(muscat.jpg); ">
+                <section class="destination">
+                    <div class="destination-content">
+                        <h2>Tour in Muscat</h2>
+                        <p>Muscat, the capital of Oman, offers a blend of tradition and modernity. Explore the Grand
+                            Mosque and
+                            the Royal Opera House.</p>
+                        <p style="background-color: aliceblue; font-weight: bold;">20 OMR \ Person</p>
+                        
+                        <a href="Booking.html#Muscat" ><button type="button"class="btn btn-light">view details</button></a>
+                    </div>
+                </section>
+            </th>
+
+            <th style="background-image: url(nizwa.jpg); ">
+                <section class="destination">
+                    <div class="destination-content">
+                        <h2>Tour in Nizwa</h2>
+                        <p>Visit Nizwa, known for its ancient fort and bustling souk. Experience Omani culture and
+                            history in
+                            this charming town.</p>
+                            <p style="background-color: aliceblue; font-weight: bold;">25 OMR \ Person</p>
+                            <a href="Booking.html#Muscat" ><button type="button"class="btn btn-light">view details</button></a>
+                    </div>
+                </section>
+            </th>
+
+            <th style="background-image: url(salalah.jpg); ">
+                <section class="destination">
+                    <div class="destination-content">
+                        <h2>Tour in Salalah</h2>
+                        <p>Salalah, a coastal city, is famous for its lush green landscapes, frankincense trees, and
+                            pristine
+                            beaches.</p>
+                            <p style="background-color: aliceblue; font-weight: bold;">30 OMR \ Person</p>
+                            <a href="Booking.html#Muscat" ><button type="button"class="btn btn-light" >view details</button></a>
+                    </div>
+                </section>
+            </th>
+            
+        </tr>
+        
+
+           
+
+    </table>
+
+
+  
+    <footer style="display:flex; margin-top: 0.5%;">
+        <div style="margin-left: 5%;   ">
+            <h5 style="margin-left: 20%;  margin-top: 30px; ">Contact Us</h5>
+            <ol >
+                <p><img src="tele-icon.png"  class="image-thumbnail" height="20px" width="20px"/><br/>+968 9999999</p>
+    
+              <img src="loca-icon.png"  class="image-thumbnail" height="20px" width="20px"/><br/><a href="#squgooglemap">SQU - COLLEGE OF SCIENCE</a>
+    
+                <p><img src="Email-icon.png"  class="image-thumbnail" height="20px" width="21px"/><br/><a 
+                    href="mailto: zsalooms101@gmail.com">SQU@gmail.com</a></p></li>
+            </ol>
+        </div>
+    
+        <div style="margin-left: 24%; margin-top: 20px; ">
+            <ul>
+               
+                    <img src="logo without BG.png"  class="image-thumbnail" alt="Tijwal logo"
+                    height="80cm" width="80cm"  />
+                
+                <li style="margin-top: 10px; margin-bottom:5px; text-justify: auto;">
+                    <a href="index.html">Home</a>|<a href="AboutUs.html">AboutUs</a>|<a href="Booking.html">Booking</a>
+                </li>
+                <li style="font-size: 10px;margin-top: 5px; margin-right: 10%;">TijwalOman 2023</li>
+            </ul>
+        </div>
+       
+        <div style="margin-left: 30%;margin-top: 30px;">
+            <h3 >About Tijwal</h3>
+            <p style="font-size: 13px; margin-right: 27px; margin-top: 16px; margin-left: 30px; ">
+                <a href="AboutUs.html" style=" margin-bottom: 25px;">
+                  Tijwal is your gateway to unforgettable experiences and adventures in the heart of Oman. We are passionate about connecting adventure seekers with unique and exciting activities provided by local service providers.</a></p>
+        
+        </div> 
+    </div> 
+    
+    </footer>
+    
+</div>  
+</body>
+
+</html>
